@@ -270,7 +270,7 @@ section { padding: var(--space-24) 0; }
 .header__logo-img {
   height: 28px;
   width: auto;
-  filter: brightness(0) invert(1);
+  filter: invert(1);
 }
 
 .header__nav {
@@ -1336,7 +1336,7 @@ section { padding: var(--space-24) 0; }
 .footer__logo-img {
   height: 28px;
   width: auto;
-  filter: brightness(0) invert(1);
+  filter: invert(1);
 }
 
 .footer__brand p { font-size: var(--fs-sm); line-height: 1.7; }
