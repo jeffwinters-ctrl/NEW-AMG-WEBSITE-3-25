@@ -4,21 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abstrakt | Outsourced Sales &amp; Pipeline Generation for Commercial Services</title>
-  <meta name="description" content="Abstrakt is the outsourced sales development partner for commercial service companies. We build and manage outbound sales functions that generate qualified pipeline through real human conversations." />
+  <meta name="description" content="Abstrakt is the outsourced sales development partner for commercial service companies. We own the entire revenue cycle from leads to closed deals across 13 commercial industries." />
+  <meta name="theme-color" content="#09090b" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="./css/style.css" />
-
-  <!-- Favicon (text placeholder) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e11d48'/><text x='50' y='72' font-size='65' font-weight='800' fill='white' text-anchor='middle' font-family='system-ui'>A</text></svg>" />
 </head>
 <body>
 
@@ -27,55 +21,121 @@
     <div class="page-loader__spinner"></div>
   </div>
 
-  <!-- Mobile Menu Overlay -->
+  <!-- Mobile Menu -->
   <div class="mobile-menu" aria-hidden="true">
     <a href="#industries">Industries</a>
+    <a href="#revenue-cycle">Revenue Cycle</a>
     <a href="#how-it-works">How It Works</a>
     <a href="#why-abstrakt">Why Abstrakt</a>
     <a href="#results">Results</a>
     <a href="#market-availability" class="btn btn--primary">Check Availability</a>
   </div>
 
+  <!-- Industries Mega Menu -->
+  <div class="industries-mega" id="industries-mega">
+    <div class="industries-mega__grid">
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> HVAC</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Roofing</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Construction</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Landscaping</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Paving</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Commercial Cleaning</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Flooring</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Electrical</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Fire Protection</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Painting</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Solar</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> General Contracting</a>
+      <a href="#industries" class="industries-mega__item"><span class="dot"></span> Plumbing</a>
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="header">
     <div class="header__inner">
-      <a href="/" class="header__logo">abstrakt<span>.</span></a>
+      <a href="/" class="header__logo">
+        <span class="header__logo-mark">A</span>
+        abstrakt
+      </a>
 
       <nav class="header__nav">
-        <a href="#industries">Industries</a>
+        <button class="header__industries-btn" id="industries-toggle">
+          13 Industries
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <a href="#revenue-cycle">Revenue Cycle</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#why-abstrakt">Why Abstrakt</a>
         <a href="#results">Results</a>
       </nav>
 
-      <a href="#market-availability" class="btn btn--primary btn--sm header__cta desktop-only">
-        Check Availability
-      </a>
-
-      <button class="header__mobile-toggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header__right">
+        <a href="#market-availability" class="btn btn--primary btn--sm desktop-only">Check Availability</a>
+        <button class="header__mobile-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero__bg-pattern"></div>
-    <div class="hero__grid-lines"></div>
+    <div class="hero__bg"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__noise"></div>
     <div class="container">
       <div class="hero__content">
-        <div class="hero__badge reveal">Outsourced Sales Development Partner</div>
+        <div class="hero__billion reveal">
+          <span class="pulse"></span>
+          Contributing to Over $1B in Client Revenue
+        </div>
+
         <h1 class="reveal reveal-delay-1">
-          Your Revenue Team for <span class="accent-underline">Commercial Services</span>
+          We Own the<br /><span class="hero__red-text">Revenue Cycle</span>
         </h1>
+
         <p class="hero__subtitle reveal reveal-delay-2">
-          We build and manage outbound sales functions that consistently generate qualified pipeline with human conversations your buyers will actually take.
+          From first touch to closed deal&mdash;we build, manage, and own the entire outbound sales function for commercial service companies across 13 industries.
         </p>
+
         <div class="hero__actions reveal reveal-delay-3">
           <a href="#market-availability" class="btn btn--primary btn--lg">Check Market Availability</a>
-          <a href="#how-it-works" class="btn btn--secondary btn--lg">See How It Works</a>
+          <a href="#revenue-cycle" class="btn btn--ghost btn--lg">See What We Own &rarr;</a>
+        </div>
+      </div>
+
+      <div class="hero__industries">
+        <div class="hero__industries-label">Specialized in 13 Commercial Industries</div>
+        <div class="ticker-track">
+          <span class="ticker-item"><span class="dot"></span> HVAC</span>
+          <span class="ticker-item"><span class="dot"></span> Roofing</span>
+          <span class="ticker-item"><span class="dot"></span> Construction</span>
+          <span class="ticker-item"><span class="dot"></span> Landscaping</span>
+          <span class="ticker-item"><span class="dot"></span> Paving</span>
+          <span class="ticker-item"><span class="dot"></span> Commercial Cleaning</span>
+          <span class="ticker-item"><span class="dot"></span> Flooring</span>
+          <span class="ticker-item"><span class="dot"></span> Electrical</span>
+          <span class="ticker-item"><span class="dot"></span> Fire Protection</span>
+          <span class="ticker-item"><span class="dot"></span> Painting</span>
+          <span class="ticker-item"><span class="dot"></span> Solar</span>
+          <span class="ticker-item"><span class="dot"></span> General Contracting</span>
+          <span class="ticker-item"><span class="dot"></span> Plumbing</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="ticker-item"><span class="dot"></span> HVAC</span>
+          <span class="ticker-item"><span class="dot"></span> Roofing</span>
+          <span class="ticker-item"><span class="dot"></span> Construction</span>
+          <span class="ticker-item"><span class="dot"></span> Landscaping</span>
+          <span class="ticker-item"><span class="dot"></span> Paving</span>
+          <span class="ticker-item"><span class="dot"></span> Commercial Cleaning</span>
+          <span class="ticker-item"><span class="dot"></span> Flooring</span>
+          <span class="ticker-item"><span class="dot"></span> Electrical</span>
+          <span class="ticker-item"><span class="dot"></span> Fire Protection</span>
+          <span class="ticker-item"><span class="dot"></span> Painting</span>
+          <span class="ticker-item"><span class="dot"></span> Solar</span>
+          <span class="ticker-item"><span class="dot"></span> General Contracting</span>
+          <span class="ticker-item"><span class="dot"></span> Plumbing</span>
         </div>
       </div>
     </div>
@@ -86,29 +146,77 @@
     <div class="container">
       <div class="stats-bar__grid">
         <div class="stats-bar__item reveal">
-          <div class="stats-bar__number">
-            <span data-count="2000" data-suffix="+">0</span><span class="accent">+</span>
-          </div>
-          <div class="stats-bar__label">Partners Served</div>
+          <div class="stats-bar__number">$<span data-count="1" data-suffix="B">0</span><span class="red">B+</span></div>
+          <div class="stats-bar__label">Client Revenue Influenced</div>
         </div>
         <div class="stats-bar__item reveal reveal-delay-1">
-          <div class="stats-bar__number">
-            <span data-count="10" data-suffix="x">0</span><span class="accent">x</span>
-          </div>
-          <div class="stats-bar__label">Inc. 5000 Honoree</div>
+          <div class="stats-bar__number"><span data-count="2000" data-suffix="+">0</span><span class="red">+</span></div>
+          <div class="stats-bar__label">Partners Served</div>
         </div>
         <div class="stats-bar__item reveal reveal-delay-2">
-          <div class="stats-bar__number">
-            <span data-count="500" data-suffix="+">0</span><span class="accent">+</span>
-          </div>
-          <div class="stats-bar__label">Team Members</div>
+          <div class="stats-bar__number"><span data-count="13">0</span></div>
+          <div class="stats-bar__label">Commercial Industries</div>
         </div>
         <div class="stats-bar__item reveal reveal-delay-3">
-          <div class="stats-bar__number">
-            <span data-count="50" data-suffix="">0</span>
-          </div>
+          <div class="stats-bar__number"><span data-count="50">0</span></div>
           <div class="stats-bar__label">States Covered</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Revenue Cycle - WE OWN IT -->
+  <section class="revenue-cycle" id="revenue-cycle">
+    <div class="container">
+      <div class="revenue-cycle__header reveal">
+        <span class="section-label">Full Revenue Ownership</span>
+        <h2>Leads to Closed Deals.<br /><span class="text-red">We Own Every Step.</span></h2>
+        <p>We don't hand off leads and hope for the best. We own the entire revenue cycle for your commercial service business&mdash;from building your pipeline to helping you close.</p>
+      </div>
+
+      <div class="revenue-cycle__visual reveal">
+        <div class="cycle-step">
+          <div class="cycle-step__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <h4>Identify</h4>
+          <p>Build your ideal target market</p>
+        </div>
+        <div class="cycle-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h4>Engage</h4>
+          <p>Multi-channel outbound outreach</p>
+        </div>
+        <div class="cycle-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Convert</h4>
+          <p>Book qualified appointments</p>
+        </div>
+        <div class="cycle-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4>Close</h4>
+          <p>Revenue hits your bottom line</p>
+        </div>
+      </div>
+
+      <div class="ownership-banner reveal">
+        <h3>We don't generate leads. <span class="text-red">We generate revenue.</span></h3>
+        <p>From the first dial to the signed contract, Abstrakt owns the outcomes across all 13 commercial industries we serve.</p>
       </div>
     </div>
   </section>
@@ -118,116 +226,114 @@
     <div class="container">
       <div class="industries__header reveal">
         <span class="section-label">Industry Specialization</span>
-        <h2>13 Industries. One Mission.<br /><span class="text-accent">Revenue.</span></h2>
-        <p>We function as the outsourced sales team for commercial service companies. Industry knowledge is our edge.</p>
+        <h2>13 Industries. Full Revenue Ownership. <span class="text-red">Zero Excuses.</span></h2>
+        <p>We don't dabble. We dominate. Each industry gets a dedicated team that knows your buyers, speaks their language, and closes their deals.</p>
       </div>
 
       <div class="industries__grid">
-
         <div class="industry-card reveal">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 12h18"/><path d="M9 3 3 9"/><path d="M15 3l6 6"/><path d="m3 15 6 6"/><path d="m15 21 6-6"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 12h18"/><path d="M9 3 3 9"/><path d="M15 3l6 6"/><path d="m3 15 6 6"/><path d="m15 21 6-6"/></svg>
           </div>
           <div class="industry-card__name">HVAC</div>
-          <div class="industry-card__desc">Pipeline generation for commercial heating, ventilation, and air conditioning contractors.</div>
+          <div class="industry-card__desc">Pipeline to closed deals for commercial HVAC contractors.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-1">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 7v1a3 3 0 0 0 6 0V7"/><path d="M9 7v1a3 3 0 0 0 6 0V7"/><path d="M15 7v1a3 3 0 0 0 6 0V7"/><path d="M3 7h18l-1.5-4.5a1 1 0 0 0-1-.5H5.5a1 1 0 0 0-1 .5L3 7Z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 7v1a3 3 0 0 0 6 0V7m0 0v1a3 3 0 0 0 6 0V7m0 0v1a3 3 0 0 0 6 0V7"/><path d="M3 7h18l-1.5-4.5a1 1 0 0 0-1-.5H5.5a1 1 0 0 0-1 .5L3 7Z"/></svg>
           </div>
           <div class="industry-card__name">Roofing</div>
-          <div class="industry-card__desc">Sales development for commercial roofing companies seeking predictable project pipeline.</div>
+          <div class="industry-card__desc">End-to-end sales for commercial roofing companies.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-2">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M12 6V2"/><path d="M2 10h20"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M12 6V2"/><path d="M2 10h20"/></svg>
           </div>
           <div class="industry-card__name">Construction</div>
-          <div class="industry-card__desc">Outbound sales execution for commercial construction firms and general builders.</div>
+          <div class="industry-card__desc">Revenue ownership for commercial construction firms.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-3">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
           <div class="industry-card__name">Landscaping</div>
-          <div class="industry-card__desc">Revenue generation for commercial landscaping and grounds maintenance companies.</div>
+          <div class="industry-card__desc">Full-cycle sales for commercial landscaping companies.</div>
         </div>
 
         <div class="industry-card reveal">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M4 15h16"/><path d="M4 11h16"/><path d="M4 7h16"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M4 15h16"/><path d="M4 11h16"/><path d="M4 7h16"/></svg>
           </div>
           <div class="industry-card__name">Paving</div>
-          <div class="industry-card__desc">Pipeline creation for commercial paving and asphalt contractors across all markets.</div>
+          <div class="industry-card__desc">Pipeline to revenue for commercial paving contractors.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-1">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h18"/><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/><path d="M14 10h.01"/><path d="M10 10h.01"/><path d="M14 6h.01"/><path d="M10 6h.01"/><path d="M10 18h4v4h-4z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h18"/><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/><path d="M14 10h.01"/><path d="M10 10h.01"/><path d="M14 6h.01"/><path d="M10 6h.01"/><path d="M10 18h4v4h-4z"/></svg>
           </div>
           <div class="industry-card__name">Commercial Cleaning</div>
-          <div class="industry-card__desc">Sales development for janitorial and commercial cleaning service providers.</div>
+          <div class="industry-card__desc">Leads to closed contracts for janitorial services.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-2">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M1 10h22"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M1 10h22"/></svg>
           </div>
           <div class="industry-card__name">Flooring</div>
-          <div class="industry-card__desc">Outbound pipeline for commercial flooring installation and restoration companies.</div>
+          <div class="industry-card__desc">Revenue generation for commercial flooring installers.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-3">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
           <div class="industry-card__name">Electrical</div>
-          <div class="industry-card__desc">Sales execution for commercial electrical contractors and systems integrators.</div>
+          <div class="industry-card__desc">Full revenue cycle for commercial electrical contractors.</div>
         </div>
 
         <div class="industry-card reveal">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
           </div>
           <div class="industry-card__name">Fire Protection</div>
-          <div class="industry-card__desc">Pipeline generation for fire protection, sprinkler, and life safety contractors.</div>
+          <div class="industry-card__desc">Pipeline ownership for fire protection contractors.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-1">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4"/><path d="M6 8v8"/><path d="M10 4v16"/><path d="M14 6v12"/><path d="M18 8v8"/><path d="M22 12h-4"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4"/><path d="M6 8v8"/><path d="M10 4v16"/><path d="M14 6v12"/><path d="M18 8v8"/><path d="M22 12h-4"/></svg>
           </div>
           <div class="industry-card__name">Painting</div>
-          <div class="industry-card__desc">Revenue development for commercial painting and coatings contractors.</div>
+          <div class="industry-card__desc">Leads to revenue for commercial painting contractors.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-2">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </div>
           <div class="industry-card__name">Solar</div>
-          <div class="industry-card__desc">Sales development for commercial solar installation and energy service companies.</div>
+          <div class="industry-card__desc">End-to-end sales for commercial solar installers.</div>
         </div>
 
         <div class="industry-card reveal reveal-delay-3">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
           <div class="industry-card__name">General Contracting</div>
-          <div class="industry-card__desc">Pipeline creation for general contractors managing multi-trade commercial projects.</div>
+          <div class="industry-card__desc">Revenue ownership for multi-trade general contractors.</div>
         </div>
 
         <div class="industry-card reveal">
           <div class="industry-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
           </div>
           <div class="industry-card__name">Plumbing</div>
-          <div class="industry-card__desc">Outbound sales execution for commercial plumbing and mechanical contractors.</div>
+          <div class="industry-card__desc">Full-cycle sales for commercial plumbing contractors.</div>
         </div>
-
       </div>
     </div>
   </section>
@@ -237,15 +343,15 @@
     <div class="container">
       <div class="value-props__header reveal">
         <span class="section-label">Why Abstrakt</span>
-        <h2>Not a Marketing Agency.<br /><span class="text-accent">Your Revenue Partner.</span></h2>
-        <p>We don't sell meetings. We build industry-specific pipeline systems that drive real revenue for commercial service companies.</p>
+        <h2>Not a Marketing Agency.<br /><span class="text-red">A Revenue Machine.</span></h2>
+        <p>We don't sell leads. We sell outcomes. Your pipeline, your appointments, your closed deals&mdash;that's what we own.</p>
       </div>
 
       <div class="value-props__grid">
         <div class="value-card reveal">
           <div class="value-card__number">01</div>
           <h3>Pipeline Generation</h3>
-          <p>We build your target market, craft the messaging, and execute multi-channel outreach that puts qualified opportunities on your calendar. Not just leads. Revenue-ready conversations.</p>
+          <p>We build your target market, craft the messaging, and execute multi-channel outreach that puts qualified opportunities on your calendar. Revenue-ready conversations, not vanity leads.</p>
         </div>
 
         <div class="value-card reveal reveal-delay-1">
@@ -257,7 +363,7 @@
         <div class="value-card reveal reveal-delay-2">
           <div class="value-card__number">03</div>
           <h3>Revenue Accountability</h3>
-          <p>We measure what matters: pipeline dollars, qualified opportunities, and revenue influence. Not vanity metrics. You get full visibility through your dedicated Results Portal, 24/7.</p>
+          <p>We measure pipeline dollars, qualified opportunities, and revenue influence. Not impressions. Not clicks. Actual money in your pipeline and closed on your books.</p>
         </div>
       </div>
     </div>
@@ -268,8 +374,8 @@
     <div class="container">
       <div class="process__header reveal">
         <span class="section-label">How It Works</span>
-        <h2>From Territory to <span class="text-accent">Pipeline</span></h2>
-        <p>Our proven 4-step process turns your target market into a predictable flow of qualified opportunities.</p>
+        <h2>From Territory to <span class="text-red">Revenue</span></h2>
+        <p>Our proven 4-step process turns your target market into predictable, closed revenue.</p>
       </div>
 
       <div class="process__steps">
@@ -278,23 +384,20 @@
           <h4>Define Your Market</h4>
           <p>We build your ideal customer profile using 125M+ records. Your territory. Your criteria. Exclusive to you.</p>
         </div>
-
         <div class="process-step reveal reveal-delay-1">
           <div class="process-step__number">2</div>
           <h4>Launch Outreach</h4>
-          <p>Multi-channel engagement: calls, email, LinkedIn, and direct mail. All orchestrated by your dedicated sales team.</p>
+          <p>Multi-channel engagement: calls, email, LinkedIn, and direct mail. Orchestrated by your dedicated sales team.</p>
         </div>
-
         <div class="process-step reveal reveal-delay-2">
           <div class="process-step__number">3</div>
           <h4>Convert Conversations</h4>
-          <p>Our reps identify decision-makers, introduce your brand, and nurture relationships until they're ready to talk.</p>
+          <p>We identify decision-makers, introduce your brand, and nurture relationships until they're ready to buy.</p>
         </div>
-
         <div class="process-step reveal reveal-delay-3">
           <div class="process-step__number">4</div>
-          <h4>Deliver Pipeline</h4>
-          <p>Qualified appointments land on your calendar. Right company, right contact, right timing. You close, we keep filling.</p>
+          <h4>Close Revenue</h4>
+          <p>Qualified appointments land on your calendar. Right company, right contact, right timing. You close. We keep filling.</p>
         </div>
       </div>
     </div>
@@ -305,52 +408,49 @@
     <div class="container">
       <div class="differentiator__inner">
         <div class="differentiator__content reveal">
-          <span class="section-label" style="color: var(--color-accent);">The Real Advantage</span>
-          <h2>AI Is Making Bad Outbound Worse&mdash;and Good Outbound <span class="text-accent">More Valuable</span></h2>
+          <span class="section-label">The Real Advantage</span>
+          <h2>AI Makes Bad Outbound Worse.<br />Good Outbound? <span class="text-red">More Valuable.</span></h2>
           <div class="highlight-quote">
             "Our advantage is not dialing&mdash;it's knowing who to call, what to say, and how to convert real conversations into revenue."
           </div>
-          <p>We use technology where it helps. But pipeline is still won in live conversations. That's where companies struggle, and that's what we own. When you partner with Abstrakt, you get a full sales development team&mdash;not a bot, not a sequence, not a spray-and-pray tool.</p>
+          <p>Pipeline is won in live conversations. That's where companies struggle, and that's what we own. When you partner with Abstrakt, you get a full sales development team&mdash;not a bot, not a sequence, not a spray-and-pray tool.</p>
         </div>
 
         <div class="differentiator__points reveal reveal-delay-1">
           <div class="diff-point">
             <div class="diff-point__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
             <div>
-              <h4>Real Human Conversations</h4>
-              <p>500+ U.S.-based reps trained in your industry. No offshore call centers. No AI voice bots. Real people building real relationships.</p>
+              <h4>500+ U.S.-Based Reps</h4>
+              <p>Real people. Real conversations. No offshore call centers. No AI voice bots.</p>
             </div>
           </div>
-
           <div class="diff-point">
             <div class="diff-point__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div>
               <h4>Compliant &amp; Trusted</h4>
-              <p>Fully compliant outreach that protects your brand. We follow every regulation so your reputation stays spotless.</p>
+              <p>Fully compliant outreach that protects your brand and reputation.</p>
             </div>
           </div>
-
           <div class="diff-point">
             <div class="diff-point__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             </div>
             <div>
-              <h4>Tied to Revenue, Not Vanity</h4>
-              <p>We measure pipeline dollars and closed deals&mdash;not impressions, clicks, or open rates. Sales investment, not marketing spend.</p>
+              <h4>Revenue, Not Vanity</h4>
+              <p>We measure pipeline dollars and closed deals&mdash;not impressions or open rates.</p>
             </div>
           </div>
-
           <div class="diff-point">
             <div class="diff-point__icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
             </div>
             <div>
               <h4>Exclusive Territory</h4>
-              <p>Your market is yours alone. We never double-book territories, so your outreach never competes with another client.</p>
+              <p>Your market is yours alone. We never double-book. Zero competition from other clients.</p>
             </div>
           </div>
         </div>
@@ -363,16 +463,40 @@
     <div class="container">
       <div class="map-section__header reveal">
         <span class="section-label">Market Availability</span>
-        <h2>Is Your Market <span class="text-accent">Available?</span></h2>
-        <p>Select a city below to check availability in your area. Markets are exclusive&mdash;once claimed, they're off the board.</p>
+        <h2>Is Your Market <span class="text-red">Available?</span></h2>
+        <p>First, select your industry. Then pick your city. Markets are exclusive&mdash;once claimed, they're off the board.</p>
+      </div>
+
+      <!-- Industry Selector -->
+      <div class="industry-selector reveal" id="industry-selector">
+        <button class="industry-selector__btn" data-industry="HVAC">HVAC</button>
+        <button class="industry-selector__btn" data-industry="Roofing">Roofing</button>
+        <button class="industry-selector__btn" data-industry="Construction">Construction</button>
+        <button class="industry-selector__btn" data-industry="Landscaping">Landscaping</button>
+        <button class="industry-selector__btn" data-industry="Paving">Paving</button>
+        <button class="industry-selector__btn" data-industry="Cleaning">Cleaning</button>
+        <button class="industry-selector__btn" data-industry="Flooring">Flooring</button>
+        <button class="industry-selector__btn" data-industry="Electrical">Electrical</button>
+        <button class="industry-selector__btn" data-industry="Fire Protection">Fire Protection</button>
+        <button class="industry-selector__btn" data-industry="Painting">Painting</button>
+        <button class="industry-selector__btn" data-industry="Solar">Solar</button>
+        <button class="industry-selector__btn" data-industry="General Contracting">General Contracting</button>
+        <button class="industry-selector__btn" data-industry="Plumbing">Plumbing</button>
       </div>
     </div>
 
     <div class="map-container">
-      <div class="map-wrapper reveal">
+      <!-- Prompt shown before industry selection -->
+      <div class="industry-selector__prompt" id="map-prompt">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+        Select your industry above to view available markets
+      </div>
+
+      <!-- Map (hidden until industry selected) -->
+      <div class="map-wrapper" id="map-wrapper">
         <div id="market-map"></div>
       </div>
-      <div class="map-legend reveal">
+      <div class="map-legend reveal" id="map-legend" style="display:none;">
         <div class="map-legend__item">
           <div class="map-legend__dot map-legend__dot--available"></div>
           Market Available
@@ -389,9 +513,9 @@
   <section class="social-proof" id="results">
     <div class="container">
       <div class="social-proof__header reveal">
-        <span class="section-label">Results That Speak</span>
-        <h2>Trusted by <span class="text-accent">2,000+</span> Partners Nationwide</h2>
-        <p>From HVAC firms to commercial contractors, companies across the country trust Abstrakt to build their pipeline.</p>
+        <span class="section-label">Proven Results</span>
+        <h2>Contributing to Over <span class="text-red">$1 Billion</span> in Client Revenue</h2>
+        <p>From HVAC firms to commercial contractors, 2,000+ partners trust Abstrakt to own their revenue cycle.</p>
       </div>
 
       <div class="testimonials-grid">
@@ -409,7 +533,7 @@
 
         <div class="testimonial-card reveal reveal-delay-1">
           <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-card__text">"We tried hiring internal SDRs twice. Both times we failed. Abstrakt gave us a full outbound team for less than the cost of one hire, and the results have been consistent month over month."</p>
+          <p class="testimonial-card__text">"We tried hiring internal SDRs twice. Both times we failed. Abstrakt gave us a full outbound team for less than the cost of one hire. Consistent results, month over month."</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">HV</div>
             <div>
@@ -421,7 +545,7 @@
 
         <div class="testimonial-card reveal reveal-delay-2">
           <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="testimonial-card__text">"The deal Abstrakt closed for us in the first six months financed our entire growth strategy for the next two years. This isn't lead gen. This is revenue generation."</p>
+          <p class="testimonial-card__text">"The deal Abstrakt closed for us financed our entire growth strategy for two years. This isn't lead gen&mdash;this is revenue generation. They own the outcome."</p>
           <div class="testimonial-card__author">
             <div class="testimonial-card__avatar">GC</div>
             <div>
@@ -434,11 +558,11 @@
     </div>
   </section>
 
-  <!-- Final CTA -->
+  <!-- CTA -->
   <section class="cta-section">
     <div class="container reveal">
-      <h2>Stop Waiting for Pipeline.<br /><span class="text-accent">Let's Build It.</span></h2>
-      <p>Check if your market is available and talk to a Pipeline Strategist about what Abstrakt can do for your commercial service business.</p>
+      <h2>Stop Waiting for Revenue.<br /><span class="text-red">Let's Own It.</span></h2>
+      <p>Check if your market is available and talk to a Pipeline Strategist about what Abstrakt can own for your business.</p>
       <a href="#market-availability" class="btn btn--primary btn--lg">Check Market Availability</a>
     </div>
   </section>
@@ -448,8 +572,11 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="footer__logo">abstrakt<span>.</span></div>
-          <p>The outsourced sales development partner for commercial service companies. We build pipeline, generate revenue, and grow your business through real human conversations.</p>
+          <div class="footer__logo">
+            <span class="footer__logo-mark">A</span>
+            abstrakt
+          </div>
+          <p>The outsourced sales partner that owns the entire revenue cycle for commercial service companies. From leads to closed deals across 13 industries.</p>
         </div>
 
         <div>
@@ -480,6 +607,7 @@
         <div>
           <div class="footer__heading">Company</div>
           <div class="footer__links">
+            <a href="#revenue-cycle">Revenue Cycle</a>
             <a href="#why-abstrakt">Why Abstrakt</a>
             <a href="#how-it-works">How It Works</a>
             <a href="#results">Results</a>
@@ -492,23 +620,21 @@
         <p>&copy; 2026 Abstrakt. All rights reserved.</p>
         <div class="footer__social">
           <a href="https://www.linkedin.com/company/abstraktmg/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
           <a href="https://www.facebook.com/AbstraktMG/" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
           <a href="https://x.com/AbstraktMG" target="_blank" rel="noopener" aria-label="X">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/map.js"></script>
-
 </body>
 </html>
