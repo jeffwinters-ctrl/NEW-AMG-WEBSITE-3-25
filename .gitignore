@@ -4,3 +4,8 @@ Thumbs.db
 .env
 *.log
 node_modules/
+*.docx
+*.pdf
+~$*
+*_extracted/
+*.zip
