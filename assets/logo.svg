@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
-  <!-- Wing/Flag Mark -->
-  <path d="M8 42C8 42 12 38 14 32C16 26 15 18 18 12C21 6 26 2 32 1C28 6 25 12 24 18C23 24 24 30 22 36C20 42 14 44 8 42Z" fill="white"/>
-  <path d="M18 40C18 40 20 36 22 32C24 28 24 22 26 16C28 10 32 6 36 4C33 8 31 14 30 20C29 26 29 30 27 34C25 38 21 41 18 40Z" fill="white" opacity="0.7"/>
-  <!-- Text -->
-  <text x="42" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="34" font-weight="800" fill="white" letter-spacing="-1">abstrakt</text>
-</svg>
