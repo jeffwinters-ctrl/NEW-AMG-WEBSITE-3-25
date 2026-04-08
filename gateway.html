@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstrakt | Select Your Industry</title>
+  <meta name="description" content="Abstrakt is the outsourced sales development partner for commercial service companies. Select your industry for a customized experience." />
+  <meta name="theme-color" content="#09090b" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/gateway.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e11d48'/><text x='50' y='72' font-size='65' font-weight='800' fill='white' text-anchor='middle' font-family='system-ui'>A</text></svg>" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="gw-bg">
+    <div class="gw-bg__grid"></div>
+    <div class="gw-bg__noise"></div>
+    <div class="gw-bg__radial"></div>
+    <canvas class="gw-bg__particles" id="particleCanvas"></canvas>
+  </div>
+
+  <!-- Gateway content -->
+  <main class="gw">
+    <div class="gw__header">
+      <div class="gw__logo">
+        <img src="./assets/logo.png" alt="Abstrakt" />
+      </div>
+      <div class="gw__tagline">
+        <span class="gw__pill"><span class="gw__pulse"></span> 13 Industries. One Revenue Partner.</span>
+      </div>
+      <h1 class="gw__title">What's Your <span class="gw__red">Industry</span>?</h1>
+      <p class="gw__subtitle">Select below and we'll tailor everything to your world.</p>
+    </div>
+
+    <div class="gw__grid" id="industryGrid">
+      <button class="gw-tile" data-industry="hvac">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4v40"/><path d="M4 24h40"/><circle cx="24" cy="24" r="8"/><path d="M24 8a16 16 0 0 1 16 16"/><path d="M24 40a16 16 0 0 1-16-16"/><path d="M8 24A16 16 0 0 1 24 8"/><path d="M40 24a16 16 0 0 1-16 16"/></svg>
+        </div>
+        <span class="gw-tile__label">HVAC</span>
+      </button>
+
+      <button class="gw-tile" data-industry="roofing">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24L24 6l20 18"/><path d="M8 22v18h32V22"/><path d="M18 40V30h12v10"/></svg>
+        </div>
+        <span class="gw-tile__label">Roofing</span>
+      </button>
+
+      <button class="gw-tile" data-industry="construction">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42h36"/><path d="M10 42V18l14-12 14 12v24"/><path d="M18 42V30h12v12"/><rect x="16" y="20" width="6" height="6" rx="1"/><rect x="26" y="20" width="6" height="6" rx="1"/></svg>
+        </div>
+        <span class="gw-tile__label">Construction</span>
+      </button>
+
+      <button class="gw-tile" data-industry="landscaping">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42V22"/><path d="M24 22c0-8 8-16 16-16-2 8-8 14-16 16z"/><path d="M24 28c0-6-6-12-12-12 1.5 6 6 10.5 12 12z"/><path d="M12 42h24"/></svg>
+        </div>
+        <span class="gw-tile__label">Landscaping</span>
+      </button>
+
+      <button class="gw-tile" data-industry="paving">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 36h40"/><path d="M8 36l4-20h24l4 20"/><path d="M20 16v20"/><path d="M28 16v20"/><path d="M10 28h28"/></svg>
+        </div>
+        <span class="gw-tile__label">Paving</span>
+      </button>
+
+      <button class="gw-tile" data-industry="commercial-cleaning">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6l-2 16h12L28 6"/><path d="M18 22c-6 2-10 8-10 14v2h32v-2c0-6-4-12-10-14"/><circle cx="30" cy="8" r="2"/><circle cx="34" cy="12" r="1.5"/><circle cx="32" cy="4" r="1"/></svg>
+        </div>
+        <span class="gw-tile__label">Commercial Cleaning</span>
+      </button>
+
+      <button class="gw-tile" data-industry="flooring">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="40" height="40" rx="2"/><path d="M4 16h40"/><path d="M4 28h40"/><path d="M4 40h40"/><path d="M16 4v12"/><path d="M32 4v12"/><path d="M24 16v12"/><path d="M12 28v12"/><path d="M36 28v12"/></svg>
+        </div>
+        <span class="gw-tile__label">Flooring</span>
+      </button>
+
+      <button class="gw-tile" data-industry="electrical">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4l-8 20h12L16 44l20-24H24L30 4z"/></svg>
+        </div>
+        <span class="gw-tile__label">Electrical</span>
+      </button>
+
+      <button class="gw-tile" data-industry="fire-protection">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4c0 8-12 14-12 24a12 12 0 0 0 24 0c0-10-12-16-12-24z"/><path d="M24 44c-3 0-6-3-6-7 0-5 6-8 6-12 0 4 6 7 6 12 0 4-3 7-6 7z"/></svg>
+        </div>
+        <span class="gw-tile__label">Fire Protection</span>
+      </button>
+
+      <button class="gw-tile" data-industry="painting">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="28" height="16" rx="2"/><path d="M20 20v6"/><path d="M16 26h8l2 18h-12l2-18z"/></svg>
+        </div>
+        <span class="gw-tile__label">Painting</span>
+      </button>
+
+      <button class="gw-tile" data-industry="solar">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><path d="M24 2v6"/><path d="M24 40v6"/><path d="M4.93 8.93l4.24 4.24"/><path d="M38.83 34.83l4.24 4.24"/><path d="M2 24h6"/><path d="M40 24h6"/><path d="M4.93 39.07l4.24-4.24"/><path d="M38.83 13.17l4.24-4.24"/></svg>
+        </div>
+        <span class="gw-tile__label">Solar</span>
+      </button>
+
+      <button class="gw-tile" data-industry="general-contracting">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h20v8H14z"/><path d="M10 12h28v4H10z"/><path d="M14 16v26"/><path d="M34 16v26"/><path d="M10 42h28"/><path d="M20 24h8"/><path d="M20 32h8"/></svg>
+        </div>
+        <span class="gw-tile__label">General Contracting</span>
+      </button>
+
+      <button class="gw-tile" data-industry="plumbing">
+        <div class="gw-tile__glow"></div>
+        <div class="gw-tile__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4v10h12V4"/><path d="M14 14h20v6H14z"/><path d="M20 20v8h-6v12h20V28h-6v-8"/><circle cx="24" cy="36" r="2"/></svg>
+        </div>
+        <span class="gw-tile__label">Plumbing</span>
+      </button>
+    </div>
+
+    <div class="gw__skip">
+      <button class="gw__skip-btn" id="skipBtn">Skip &mdash; show me everything</button>
+    </div>
+  </main>
+
+  <!-- Explosion overlay -->
+  <div class="gw-explosion" id="explosion">
+    <div class="gw-explosion__flash"></div>
+    <div class="gw-explosion__label"></div>
+  </div>
+
+  <script src="./js/gateway.js"></script>
+</body>
+</html>
